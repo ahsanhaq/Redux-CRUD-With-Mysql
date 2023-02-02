@@ -1,0 +1,394 @@
+// General
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    color: $secondary-color;
+    letter-spacing: 0.01em;
+}
+
+html,
+body {
+    min-height: 100%;
+    height: 100%;
+    @media (max-width: 767px) {
+        height: auto;
+    }
+}
+
+h1 {
+    font-size: $h1;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading-color;
+    font-weight: $heading-weight;
+}
+
+a {
+    color: $link-color;
+    transition: color 0.3s ease;
+    &:hover {
+        color: darken($link-color, 15%);
+    }
+    &:focus {
+        text-decoration: none;
+        color: $link-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+dt {
+    float: left;
+    margin-right: 5px;
+}
+
+dd {
+    margin-bottom: 15px;
+    .label {
+        display: inline-block;
+        margin: 0 4px 4px 0;
+        padding: 5px 10px;
+    }
+}
+
+dd:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.posrel {
+    position: relative;
+}
+
+.btn {
+    // text-transform: uppercase;
+    @include button-size($btn-text-size, $btn-text-weight, $btn-text-padding);
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    &:focus {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.btn-xs {
+    width: 100px;
+}
+
+.btn-sm {
+    width: 140px;
+}
+
+.btn-md {
+    width: 200px;
+}
+
+.btn-primary {
+    @include button-variant($btn-primary-color, $btn-primary-background, $btn-primary-background);
+    display: inline-block;
+    margin-right: 10px; // &:last-of-type{margin-right: 0;}
+}
+
+.btn-transparent {
+    @include button-variant($btn-primary-background, transparent, $btn-primary-background);
+    display: inline-block;
+    margin-right: 10px; // &:last-of-type{margin-right: 0;}
+    &:hover {
+        @include button-variant($btn-primary-color, $btn-primary-background, $btn-primary-background);
+    }
+}
+
+.warning {
+    .btn-primary {
+        @include button-variant($white, $warning-color, $warning-color);
+    }
+    .btn-transparent {
+        @include button-variant($warning-color, transparent, $warning-color);
+        &:hover {
+            @include button-variant($btn-primary-color, $warning-color, $warning-color);
+        }
+    }
+}
+
+.btn-secondary {
+    @include button-variant($btn-secondary-color, $btn-secondary-background, $btn-secondary-background);
+}
+
+.btn-default {
+    @include button-variant($btn-default-color, $btn-default-background, $btn-default-background);
+}
+
+.btn-back {
+    font-size: $base-font-size;
+    font-weight: $bold;
+    text-decoration: none !important;
+    color: white !important;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    display: inline-block;
+    i {
+        margin-right: 10px;
+        color: white;
+        vertical-align: middle;
+        font-size: 8px;
+    }
+    &:after {
+        content: "";
+        display: block;
+        height: 2px;
+        background: white;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        transition: all 0.3s ease;
+        transform: translateX(100%);
+    }
+    &:hover {
+        &:after {
+            transform: translateX(0);
+        }
+    }
+}
+
+.close {
+    font-size: 30px;
+}
+
+label {
+    color: $label-color;
+    font-weight: $normal;
+    &.error {
+        // position: absolute;
+        width: 100%;
+        background: $error-color;
+        padding: 8px 8px;
+        border-radius: 0;
+        color: white;
+        margin-top: 10px;
+    }
+    .required {
+        color: red;
+        margin-left: 5px;
+    }
+    .optional {
+        color: #929292;
+        font-size: 12px;
+    }
+}
+
+.label-primary {
+    background-color: $secondary-color;
+    font-size: $base-font-size;
+    font-weight: 400
+}
+
+select.form-control {
+    color: #797979;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('../../images/icons/caret.svg');
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-size: 12px;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+.field-wrap {
+    position: relative;
+    i {
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        font-size: 16px;
+        color: $secondary-light-color;
+        pointer-events: none;
+    }
+    .form-control:focus+i {
+        color: darken($secondary-light-color, 40%);
+    }
+    .form-control {
+        padding-left: 35px;
+    }
+    .datepicker {
+        padding-left: 20px;
+        &.valid {
+            background-position: 90% center;
+        }
+        &.error {
+            background-position: 90% center;
+        }
+    }
+    .datepicker+i {
+        left: auto;
+        right: 10px;
+        pointer-events: initial;
+        cursor: pointer;
+    }
+    .icon-calendar {
+        left: auto;
+        right: 10px;
+    }
+    .icon-align-right {
+        padding-left: 20px;
+        +i {
+            left: auto;
+            right: 10px;
+        }
+    }
+}
+
+.field-controls {
+    i {
+        float: right;
+        margin-left: 8px;
+        font-size: 20px;
+        cursor: pointer;
+        color: $secondary-color;
+    }
+    .icon-x-circle {
+        color: red;
+    }
+    &.editing>i {
+        display: none;
+    }
+}
+
+.label-edit {
+    i {
+        font-size: 12px; // color: #2aca2a;
+        color: $secondary-color;
+        margin-top: 6px;
+    }
+    input {
+        border: none;
+        border-bottom: 1px solid #CCCCCC;
+        margin-bottom: 5px;
+        margin-top: -3px;
+        outline: none;
+    }
+}
+
+.field-controls-icons {
+    position: absolute;
+    top: 33px;
+    right: -60px;
+}
+
+.form-control {
+    @include field(transparent,
+    1px,
+    4px,
+    $secondary-light-color);
+    &.error {
+        background-image: url('../images/icons/cross.svg');
+        background-repeat: no-repeat;
+        background-position: 97% center;
+        background-size: 15px;
+        padding-right: 35px;
+    }
+    &.valid {
+        background-image: url('../images/icons/tick.svg');
+        background-repeat: no-repeat;
+        background-position: 97% center;
+        background-size: 17px;
+        padding-right: 35px;
+    }
+}
+
+.no-validation-visuals {
+    .form-control {
+        &.error {
+            background-image: none;
+        }
+        &.valid {
+            background-image: none;
+        }
+    }
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $placeholder-color;
+    opacity: 1;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $placeholder-color;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $placeholder-color;
+}
+
+
+.alert-good {
+    background: $greenlight;
+    border: 1px solid $green;
+    p {
+        color: $green;
+    }
+    .close {
+        color: $green;
+        width: auto;
+    }
+}
+
+.alert-bad {
+    background: $redlight;
+    border: 1px solid $red;
+    p {
+        color: $red;
+    }
+    .close {
+        color: $red;
+        width: auto;
+    }
+}
+
+main+.alert-messages-block,
+.alert-main {
+    position: fixed;
+    bottom: 0px;
+    padding: 0 35px;
+    float: left;
+    width: 100%;
+    padding-left: 335px;
+    @media (max-width: 991px) {
+        padding-left: 285px;
+    }
+    @media (max-width: 767px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.modal-footer {
+    padding: 20px 15px 0px;
+}

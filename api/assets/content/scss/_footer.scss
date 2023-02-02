@@ -1,0 +1,15 @@
+
+// Footer
+.footer {
+    text-align: center;
+    height: $footer-height;
+    line-height: $footer-height;
+    background: $footer-bg;
+    clear: both;
+    p {
+        margin: 0;
+        color: $white;
+        float: left;
+        width: 100%;
+    }
+}

@@ -1,0 +1,9 @@
+// 1.Overwrite stuff
+// Colors
+$white: #fff;
+$blue: red;
+$light-blue: #BCE0FD;
+$lightest-blue: #F1F9FF;
+$base-color:$blue;
+// 2. Import basic theme
+@import '../app';

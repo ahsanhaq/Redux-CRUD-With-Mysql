@@ -1,0 +1,47 @@
+main {
+    min-height: calc(100% - #{$topbar-height + $nav-height + 1px});
+    position: relative;
+}
+
+.page-wrap {
+    position: static;
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -50px;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.footer,
+.page-wrap:after {
+    height: 50px;
+}
+
+.page-wrapper {
+    padding: 30px 20px; // min-height: calc(100vh - #{$topbar-height + $nav-height + 1px});
+    h1 {
+        margin: 0 0 30px 0;
+        font-size: $h1+2px;
+    }
+    h2 {
+        margin: 0 0 20px 0;
+        font-size: $h1+2px;
+    }
+    .form-group,
+    .form-group-full {
+        margin-bottom: 30px;
+    }
+    .info {
+        margin-bottom: 30px;
+    }
+    @media (max-width: 991px) {
+        margin-left: 250px;
+    }
+    @media (max-width: 767px) {
+        margin-left: 0;
+        padding: 30px 5px;
+    }
+}

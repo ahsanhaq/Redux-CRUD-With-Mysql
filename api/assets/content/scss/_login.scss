@@ -1,0 +1,112 @@
+// splash Page
+.splash-page {
+    .company {
+        float: none;
+        @media (max-width: 767px) {
+            // display: none;
+            display: block;
+        }
+    }
+    main {
+        min-height: calc(100% - #{$nav-height + $footer-height});
+    }
+}
+
+.splash-wrap {
+    display: table;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    &>.left {
+        background: #d9efff;
+    }
+    &>.left,
+    &>.right {
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    } // .carousel,
+    // .item {
+    //     min-height: 400px;
+    // }
+    .alert-messages {
+        float: none;
+        margin-top: 20px;
+        margin-bottom: 0;
+        p {
+            float: none;
+        }
+    }
+}
+
+.splash-form {
+    margin-bottom: 40px;
+    max-width: 360px;
+    @media (max-width: 767px) {
+        max-width: 100%;
+    }
+    .field-wrap {
+        .form-control {
+            padding-left: 35px;
+        }
+    }
+    .form-control {
+        @include field(transparent, 1px, 4px, $secondary-light-color);
+        padding-right: 30px;
+    }
+}
+
+.splash-right {
+    // max-width: 360px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-left: 25px;
+    @media (max-width: 767px) {
+        margin-left: 0;
+        max-width: 100%;
+    }
+    h1,
+    h2 {
+        margin-bottom: 35px;
+        margin-top: 0;
+    }
+    .go-back {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    h2 {
+        font-size: $h1;
+    }
+    .form-group {
+        margin-bottom: 25px;
+        position: relative;
+    }
+    .carousel-inner>.item,
+    .carousel-inner>.item.active.left, // .carousel-inner>.item.prev,
+    .carousel-inner>.item.active.right, // .carousel-inner>.item.next
+        {
+        height: 100%;
+        opacity: 0;
+        transition: all 0.6s ease;
+    }
+    .carousel-inner>.active,
+    .carousel-inner>.next,
+    .carousel-inner>.prev {
+        opacity: 1;
+    }
+}
+
+.forgot-wrap {
+    >div {
+        margin-bottom: 20px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    a {
+        text-decoration: underline;
+    }
+}

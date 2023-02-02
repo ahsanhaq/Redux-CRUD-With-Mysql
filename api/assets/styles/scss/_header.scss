@@ -1,0 +1,222 @@
+// Header
+.top-bar {
+    height: $topbar-height;
+    line-height: $topbar-height;
+    text-align: center;
+    background: $topbar-color;
+    color: $white;
+    font-weight: $bold;
+    font-family: $base-font-family;  
+    padding: 0 20px;
+    @media (max-width: 767px) {
+        padding: 0 20px;
+    }
+    position: relative;
+    p {
+        margin: 0;
+        font-size: $h1;
+    }
+    .company {
+        float: left;
+        position: relative;
+        z-index: 1;
+        font-size: $page-title;
+    }
+    .brand {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-50%);
+        padding: 0 30px;
+        @media (max-width: 767px) {
+            text-align: left;
+        }
+    }
+}
+
+// Navbar
+.navbar-primary {
+    padding: 0;
+    background:none;
+    border-radius: 0;
+    margin: 0; // padding: 0 5px;
+    // min-height: $nav-height;
+    min-height: 0;
+    border: 0;
+    @media (max-width: 767px) {
+        padding: 0;
+        margin: 0 -15px;
+    }
+    li>a {
+        color: $nav-link-color; // font-weight: $bold;
+        font-size: 16px;
+        // text-transform: uppercase;
+        line-height: $nav-height;
+        @media (max-width: 767px) {
+            line-height: 50px;
+        }
+        padding: 0 30px;
+        transition: all 0.3s ease;
+        &:hover {
+            color: $nav-link-hover-color;
+            background-color: $nav-link-hover-bg;
+        }
+        @media (max-width: 991px) {
+            padding: 0 7px;
+        }
+    }
+    li.open>a {
+        color: $nav-link-hover-color;
+        background-color: transparent !important;
+        &:hover,
+        &:focus {
+            color: $nav-link-hover-color;
+            background-color: $nav-link-hover-bg;
+        }
+    }
+    .navbar-left {
+        margin-left: 50px;
+        @media (max-width: 767px) {
+            margin-left: 0;
+        }
+        li>a>i {
+            font-size: 20px;
+            margin-right: 10px;
+            @media (max-width: 991px) {
+                margin-right: 5px;
+            }
+        }
+    }
+    li.active>a {
+        color: $nav-link-hover-color;
+        background-color: $nav-link-hover-bg;
+        font-weight: $bold;
+    }
+    .navbar-right {
+        li>a {
+            color: $nav-link-hover-color;
+            font-weight: $bold;
+            &:hover {
+                color: $nav-link-hover-color;
+                background-color: transparent !important;
+            }            
+            &:focus {               
+                background-color: transparent !important;
+            }
+            i {
+                margin-left: 12px;
+                float: right;
+                line-height: 65px;
+            }
+        }
+        @media (max-width: 767px) {
+            padding: 0;
+            margin: 0px;
+            .navbar-left {
+                margin-left: 0;
+            }
+            .navbar-nav {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            li>a {
+                padding: 0px 15px;
+            }
+        }
+    }
+    .avatar{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: $white;
+        float: left;
+        margin: 13px;
+    }
+    .icon-caret{
+        &:before{
+            font-size: 7px;
+        }
+    }
+    .dropdown-toggle {
+        padding-left: 30px;
+        padding-right: 0;
+        @media (max-width: 991px) {
+            padding-left: 10px;
+            padding-right: 25px;
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-image: url(../images/icons/usercaret.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            top: 30px;
+            @media (max-width: 767px) {
+                top: 20px;
+            }
+            right: 12px;
+            transform: rotate(0deg);
+            transition: transform 0.3s ease;
+        }
+    }
+    @media (max-width: 767px) {
+        .navbar-nav {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.navbar-toggle {
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    .icon-bar {
+        background-color: $white;
+    }
+}
+
+.brand-img {
+    width: 100%;
+    padding: 15px;
+}
+
+.dropdown-menu{
+    a{
+        line-height: 36px !important;
+    }
+}
+
+.user-name{
+    font-weight: $heading-font-family-weight !important;
+    color: $secondary-color !important;
+    font-size: 16px;
+    &:hover{
+       
+        color: $nav-link-hover-color !important;
+    }
+}
+.logout{
+    color: $light-blue-darker !important;
+    text-decoration: underline;
+    font-size: 16px;
+    &:hover{
+       
+        color: $nav-link-hover-color !important;
+    }
+}
+
+.brand-img-nav{
+    width: 36px;
+}
+
+.body-container{
+    padding: 40px 0;
+}

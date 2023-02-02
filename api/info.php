@@ -1,0 +1,1 @@
+<? echo CI_VERSION; ?>

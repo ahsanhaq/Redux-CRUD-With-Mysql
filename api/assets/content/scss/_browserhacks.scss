@@ -1,0 +1,12 @@
+/* Microsoft Edge Browser 12+ (All) - @supports method */
+@supports (-ms-ime-align:auto) {
+    .multiselect {
+        select {
+            option {
+                padding: 0 15px;
+                height: 30px;
+                line-height: 30px;
+            }
+        }
+    }
+}

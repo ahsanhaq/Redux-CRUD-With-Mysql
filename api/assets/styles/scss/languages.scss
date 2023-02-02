@@ -1,0 +1,203 @@
+@import './_variables.scss';
+@import './_mixins.scss';
+@import './_fonts.scss';
+@import './_general.scss';
+@import './_header.scss';
+@import './_footer.scss';
+@import './_main.scss';
+@import './_accordion.scss';
+
+header.header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+.languages-cont {
+    height: 100%;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 0;
+    .container{
+        width: 100%;
+        padding: 0;
+        height: 100%;
+    }
+}
+.col-left{
+    background:$nav-link-hover-bg;
+    height: 100%;
+    padding: 20px 20px 0;
+}
+.col-right{
+    padding: 20px 40px 0;
+}
+
+.sidebar-form-wrapp{
+    margin-top: 65px;
+    padding: 0 20px;
+    .inputfile{
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+    label.sidebar-btn{
+        line-height: 44px;
+    }
+}
+
+.sidebar-content-wrapp{
+    @extend .sidebar-form-wrapp;
+    padding: 0;
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+    .search-section{
+        label{
+            float: left;
+            display: block;
+            font-size: 16px;
+            font-weight: $base-font-family-weight !important;
+            color: $heading-color;
+        }
+        .search-bar{
+            width: 40%;
+            float: left;
+            clear: both;
+        }
+        .btn{      
+                
+            height: 44px;
+            padding: 0 20px;
+            border-radius: 0;
+            border: 0;        
+            float: left;
+            margin-left: 15px;
+            @include button-variant($btn-primary-color, $btn-primary-background, $btn-primary-background);
+            color: $black;
+            font-size: 16px; 
+        }
+    }
+    
+}
+
+.sidebar-btn {
+    background:$darker-grey ;
+    width: 100%;
+    font-size: 16px;
+    font-weight: $base-font-family-weight !important;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 0;
+    margin-bottom: 20px;
+    border: 0;
+    color: $heading-color;
+    &:hover{
+        outline: none;
+        border-color: transparent !important;
+    }
+    &:focus{
+        outline: 0 !important;
+        border-color: transparent !important;
+    }
+}
+
+.sidebar-form-wrapp-bottom{
+    padding: 0 20px;
+    label{
+        font-size: 16px;
+        font-weight: $base-font-family-weight !important;
+        color: $heading-color;
+    }
+    select{
+        margin-bottom: 20px;
+        border: 1px solid $nav-link-color;
+    }
+}
+
+.lms-section{
+    margin-top: 40px;
+}
+.s-head{
+    background: $topbar-color;
+    padding: 20px;
+    float: left;
+    width: 100%;
+    font-size: 16px;
+        font-weight: $base-font-family-weight !important;
+        color: $heading-color;
+}
+
+.string-body-row{
+    // padding: 20px;
+    float: left;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+        &:nth-child(even){
+            background:$new-blue;
+        }
+        .col-lg-3{
+            height: 100%;
+            min-height: 100%;
+        }
+}
+
+
+.string-id-row{
+    padding: 10px 20px;
+    position: relative;
+    height: 100%;
+    font-size: 16px;
+  
+    // &:hover{        
+    //     .id-update { display:block; }
+    // }
+    // &:active{
+    //     .id-update { display:block; }
+    // }
+}
+
+
+
+.string-value-row{
+    border-bottom:1px solid $row-hover-bg; 
+    padding: 10px 20px;
+    position: relative;
+    font-size: 16px;         
+    @media (min-width: 768px) {
+        padding: 10px 61px 10px 10px;
+    }
+    &:hover{
+        background: $row-hover-bg;
+        // .value-update { display:block; }
+    }
+    &:active{
+        background: $row-hover-bg;
+        // .value-update { display:block; }
+    }
+}
+
+.panel-title{
+    position: relative;
+    // &:hover{
+    //     .section-update{ display:block; }
+    // }
+    // &:active{
+    //     .section-update{ display:block; }
+    // }
+}
+
+
+.modal{
+    button{
+        float: right;
+    }
+    .cancel-btn{
+        background: $secondary-light-color !important;
+        border: $secondary-light-color !important;
+        color: $placeholder-color;
+    }
+}

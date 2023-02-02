@@ -1,0 +1,87 @@
+[24-Oct-2017 16:28:35 America/Chicago] PHP Warning:  phpinfo() has been disabled for security reasons in /home/tecfocus/public_html/demo/rbc/info.php on line 4
+[24-Oct-2017 16:30:29 America/Chicago] PHP Warning:  phpinfo() has been disabled for security reasons in /home/tecfocus/public_html/demo/rbc/info.php on line 1
+[25-Oct-2017 15:15:22 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ';' or '{' in /home/tecfocus/public_html/demo/rbc/application/controllers/Dashboard.php on line 43
+[30-Oct-2017 13:31:39 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tecfocus/public_html/demo/rbc/application/views/dashboard/sub_category.php on line 36
+[30-Oct-2017 13:31:58 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tecfocus/public_html/demo/rbc/application/views/dashboard/sub_category.php on line 36
+[02-Nov-2017 13:09:34 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 139
+[02-Nov-2017 13:09:39 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 139
+[02-Nov-2017 13:09:42 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 139
+[02-Nov-2017 13:10:06 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 139
+[02-Nov-2017 13:11:10 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 155
+[02-Nov-2017 13:11:35 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 155
+[02-Nov-2017 13:11:44 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 156
+[02-Nov-2017 13:12:10 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 156
+[02-Nov-2017 13:12:13 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 156
+[02-Nov-2017 13:12:35 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 156
+[02-Nov-2017 13:12:44 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 156
+[02-Nov-2017 13:12:47 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 156
+[02-Nov-2017 13:12:50 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 156
+[02-Nov-2017 13:16:51 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 156
+[02-Nov-2017 13:16:56 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 156
+[02-Nov-2017 13:17:51 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 156
+[02-Nov-2017 13:17:54 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 156
+[02-Nov-2017 13:18:15 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 154
+[02-Nov-2017 13:18:17 America/Chicago] PHP Fatal error:  Call to undefined function getCategoriesByParentId() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 154
+[02-Nov-2017 13:25:19 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on null in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 182
+[02-Nov-2017 13:25:53 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on null in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 182
+[02-Nov-2017 13:25:57 America/Chicago] PHP Fatal error:  Call to a member function num_rows() on null in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 182
+[02-Nov-2017 13:39:12 America/Chicago] PHP Fatal error:  Call to undefined function printMenu() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 140
+[02-Nov-2017 13:39:31 America/Chicago] PHP Fatal error:  Call to undefined function printMenu() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 140
+[02-Nov-2017 13:39:35 America/Chicago] PHP Fatal error:  Call to undefined function printMenu() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 140
+[02-Nov-2017 13:40:27 America/Chicago] PHP Fatal error:  Call to undefined function printMenu() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 140
+[02-Nov-2017 13:40:49 America/Chicago] PHP Fatal error:  Call to undefined function printMenu() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 140
+[02-Nov-2017 13:40:56 America/Chicago] PHP Fatal error:  Call to undefined function printMenu() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 140
+[02-Nov-2017 13:41:15 America/Chicago] PHP Fatal error:  Call to undefined function printMenu() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 141
+[02-Nov-2017 13:41:59 America/Chicago] PHP Fatal error:  Call to undefined function printMenu() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 141
+[02-Nov-2017 13:42:28 America/Chicago] PHP Fatal error:  Call to undefined function printMenu() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 141
+[02-Nov-2017 14:05:07 America/Chicago] PHP Parse error:  syntax error, unexpected 'publick' (T_STRING), expecting function (T_FUNCTION) in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 142
+[02-Nov-2017 14:05:28 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 160
+[02-Nov-2017 14:05:51 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 160
+[02-Nov-2017 14:07:03 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 162
+[02-Nov-2017 14:07:11 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 162
+[02-Nov-2017 14:07:11 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 162
+[02-Nov-2017 14:07:18 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 162
+[02-Nov-2017 14:07:23 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 162
+[02-Nov-2017 14:07:51 America/Chicago] PHP Fatal error:  Call to undefined function getChildrenAttachments() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 153
+[02-Nov-2017 14:08:42 America/Chicago] PHP Fatal error:  Call to undefined function getChildrenAttachments() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 153
+[02-Nov-2017 14:08:45 America/Chicago] PHP Fatal error:  Call to undefined function getChildrenAttachments() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 153
+[02-Nov-2017 14:09:24 America/Chicago] PHP Fatal error:  Call to undefined function getChildrenAttachments() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 153
+[02-Nov-2017 14:09:28 America/Chicago] PHP Fatal error:  Call to undefined function getChildrenAttachments() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 153
+[02-Nov-2017 14:10:27 America/Chicago] PHP Fatal error:  Call to undefined function getChildrenAttachments() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 155
+[02-Nov-2017 14:10:30 America/Chicago] PHP Fatal error:  Call to undefined function getChildrenAttachments() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 155
+[02-Nov-2017 14:10:41 America/Chicago] PHP Fatal error:  Call to undefined function getChildrenAttachments() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 155
+[02-Nov-2017 14:14:20 America/Chicago] PHP Fatal error:  Call to undefined function getChildrenAttachments() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 156
+[02-Nov-2017 14:14:23 America/Chicago] PHP Fatal error:  Call to undefined function getChildrenAttachments() in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 156
+[03-Nov-2017 01:17:40 America/Chicago] PHP Fatal error:  Call to a member function real_escape_string() on null in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 149
+[03-Nov-2017 01:19:06 America/Chicago] PHP Fatal error:  Call to a member function real_escape_string() on null in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 149
+[03-Nov-2017 01:19:08 America/Chicago] PHP Fatal error:  Call to a member function real_escape_string() on null in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 149
+[03-Nov-2017 01:25:13 America/Chicago] PHP Fatal error:  Call to a member function fetch_assoc() on array in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 157
+[03-Nov-2017 02:03:20 America/Chicago] PHP Fatal error:  Call to a member function result() on null in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 147
+[03-Nov-2017 02:03:56 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 153
+[03-Nov-2017 02:03:58 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 153
+[03-Nov-2017 02:04:28 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 153
+[03-Nov-2017 02:05:04 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 153
+[03-Nov-2017 02:37:50 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/tecfocus/public_html/demo/rbc/admin/application/views/dashboard/listing.php on line 61
+[03-Nov-2017 02:38:58 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tecfocus/public_html/demo/rbc/admin/application/views/dashboard/listing.php on line 63
+[03-Nov-2017 02:39:36 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tecfocus/public_html/demo/rbc/admin/application/views/dashboard/listing.php on line 63
+[03-Nov-2017 02:39:45 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tecfocus/public_html/demo/rbc/admin/application/views/dashboard/listing.php on line 63
+[03-Nov-2017 02:39:49 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tecfocus/public_html/demo/rbc/admin/application/views/dashboard/listing.php on line 63
+[03-Nov-2017 02:41:02 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tecfocus/public_html/demo/rbc/admin/application/views/dashboard/listing.php on line 63
+[03-Nov-2017 02:41:06 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/tecfocus/public_html/demo/rbc/admin/application/views/dashboard/listing.php on line 63
+[03-Nov-2017 03:06:27 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tecfocus/public_html/demo/rbc/admin/application/views/dashboard/listing.php on line 67
+[03-Nov-2017 03:06:29 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tecfocus/public_html/demo/rbc/admin/application/views/dashboard/listing.php on line 67
+[03-Nov-2017 11:16:12 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 157
+[03-Nov-2017 11:16:47 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 157
+[03-Nov-2017 11:17:02 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 157
+[03-Nov-2017 11:17:08 America/Chicago] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 157
+[04-Nov-2017 14:09:47 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tecfocus/public_html/demo/rbc/admin/application/views/dashboard/select_listing.php on line 61
+[04-Nov-2017 14:12:07 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 190
+[04-Nov-2017 14:12:16 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 190
+[04-Nov-2017 14:12:26 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 190
+[04-Nov-2017 14:12:42 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 190
+[04-Nov-2017 14:13:00 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 190
+[04-Nov-2017 14:13:11 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 190
+[04-Nov-2017 14:13:18 America/Chicago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 190
+[04-Nov-2017 14:13:49 America/Chicago] PHP Parse error:  syntax error, unexpected ''Sub Category Added Successful' (T_ENCAPSED_AND_WHITESPACE) in /home/tecfocus/public_html/demo/rbc/admin/application/controllers/Dashboard.php on line 145
+[13-Nov-2017 12:56:59 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tecfocus/public_html/demo/rbc/admin/application/views/dashboard/listing.php on line 98
+[13-Nov-2017 12:57:02 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/tecfocus/public_html/demo/rbc/admin/application/views/dashboard/listing.php on line 98

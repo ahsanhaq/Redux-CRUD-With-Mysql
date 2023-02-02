@@ -1,0 +1,77 @@
+@import './_variables.scss';
+@mixin field($bg, $brd-w, $brd-r, $brd-c) {
+    height: $field-height;
+    line-height: $field-height;
+    padding: $field-padding;
+    font-size: $field-text-size;
+    color: $field-text-color;
+    border-color: $brd-c;
+    border-width: $brd-w;
+    border-radius: $brd-r;
+    box-shadow: none !important;
+    background-color: $bg;
+    transition: border-color 0.3s ease;
+    -webkit-appearance: none;
+
+    &:focus {
+        border-color: darken( $brd-c, 40%);
+    }
+}
+
+// Button variants
+@mixin button-variant($color, $background, $border) {
+    color: $color;
+    background-color: $background;
+    border-color: $border;
+    &:focus,
+    &.focus {
+        color: $color;
+        background-color: darken($background, 10%);
+        border-color: darken($border, 25%);
+    }
+    &:hover {
+        color: $color;
+        background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+    }
+    &:active,
+    &.active,
+    .open>&.dropdown-toggle {
+        color: $color;
+        background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $color;
+            background-color: darken($background, 17%);
+            border-color: darken($border, 25%);
+        }
+    }
+    &:active,
+    &.active,
+    .open>&.dropdown-toggle {
+        background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            background-color: $background;
+            border-color: $border;
+        }
+    }
+    .badge {
+        color: $background;
+        background-color: $color;
+    }
+}
+
+// Button sizes
+@mixin button-size($font-size, $font-weight, $padding) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    padding: $padding;
+}

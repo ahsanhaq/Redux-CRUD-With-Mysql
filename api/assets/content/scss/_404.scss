@@ -1,0 +1,40 @@
+.error-page {
+    text-align: center;
+    main {
+        height: 100%;
+        min-height: 100%;
+        display: table;
+        width: 100%;
+    }
+    h1 {
+        margin: 0;
+        color: #ec2525;
+        font-size: 80px;
+        color: #4D4D4D;
+    }
+    h2 {
+        margin: 0px 0 30px 0;
+        color: #4D4D4D;
+        font-size: 20px;
+    }
+    h3 {
+        margin: 5px 0 30px 0;
+        color: #4D4D4D;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+.message-wrap {
+    display: table-cell;
+    vertical-align: middle;
+    .well {
+        background: #f6f6f6;
+        border: 1px solid transparent;
+        width: auto;
+        display: inline-block;
+        padding: 50px;
+        border-radius: 2px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    }
+}

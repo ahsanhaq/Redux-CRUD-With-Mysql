@@ -1,0 +1,136 @@
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #DDEFDE;
+    border: none !important;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .panel-default>.panel-heading a {
+    display: block;
+    padding: 13px 15px;
+  }
+  
+  .panel-default>.panel-heading a:after {
+    content: "";
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    float: right;
+    transition: transform .25s linear;
+    -webkit-transition: -webkit-transform .25s linear;
+  }
+  
+  .panel-default>.panel-heading a[aria-expanded="true"] {
+    background-color: #DDEFDE;
+  }
+  
+  .panel-default>.panel-heading a[aria-expanded="true"]:after {
+     
+    content: url(../../images/icons/caret-up.svg);  
+    height: 10px;
+    width: 10px;  
+  }
+  
+  .panel-default>.panel-heading a[aria-expanded="false"]:after {
+    content: url(../../images/icons/caret.svg);  
+    height: 10px;
+    width: 10px;
+  }
+  
+  .accordion-option {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin: 15px 0;
+  }
+  
+  .accordion-option .title {
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .accordion-option .toggle-accordion {
+    float: right;
+    font-size: 16px;
+    color: #6a6c6f;
+  }
+  
+  .accordion-option .toggle-accordion:before {
+    content: "Expand All";
+  }
+  
+  .accordion-option .toggle-accordion.active:before {
+    content: "Collapse All";
+  }
+  .panel-default {
+    border-color: transparent !important;
+    box-shadow: none !important
+}
+.panel-group{
+    margin-bottom: 0 !important;
+    padding-bottom: 2px;
+}
+  .panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 0 !important;
+}
+
+.panel-default > .panel-heading a{
+    color: $secondary-color;
+    font-size: 16px;
+    font-weight: $base-font-family-weight;        
+    text-decoration: none;
+    span{
+        font-weight:$heading-font-family-weight;
+    }
+}
+.panel-body {
+    border-top:1px solid transparent !important;
+    padding: 0;
+}
+.id-update{
+  left: 4px;
+  position: absolute;
+  top: 50px;
+  display: none;
+  a{
+      margin-left: 15px;
+  }
+}
+.value-update{
+  right: 20px;
+  position: absolute;
+  top: 10px;
+  display: none;
+  a{
+      margin-left: 15px;
+  }
+  
+}
+.section-update{
+    right: 39px;
+    position: absolute;
+    top: 13px;
+       display: none;
+       a{
+           margin-left: 0 !important;
+           display: inline !important;
+           color: $blue !important;
+           font-weight:$heading-font-family-weight !important;
+       }
+       
+   }
