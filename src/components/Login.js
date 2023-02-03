@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { PostLoginApiAction } from "../redux/action/action";
 import { useDispatch, useSelector } from "react-redux";
-//import CheckAuth from "./checkAuth";
-
+import { CheckStatusLogin } from "./checkAuth";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
-
+  CheckStatusLogin();
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   //const [user, setData] = useState(null)
@@ -20,7 +21,8 @@ const Login = () => {
     // const loggedInUser = localStorage.getItem("userData");
     // const log =JSON.parse(loggedInUser)
     //console.log("ahsan---------------",log.user_id);
-    localStorage.setItem('loggedInUser', true)
+    localStorage.setItem('loggedInUser', true);
+    navigate("/home")
 
 
     }

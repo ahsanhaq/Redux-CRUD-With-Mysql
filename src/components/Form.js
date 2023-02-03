@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { PostApiAction } from "../redux/action/action";
 import { useDispatch,useSelector } from "react-redux";
-
+import { CheckStatus } from "./checkAuth";
 const Form = () =>{
-  
+  CheckStatus();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");

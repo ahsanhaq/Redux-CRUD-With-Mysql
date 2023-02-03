@@ -3,8 +3,9 @@ import { UpdateApiAction } from "../redux/action/action";
 import { useDispatch,useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import GetDetailsByHooks from "../hooks/getDetailsByHooks";
-
+import { CheckStatus } from "./checkAuth";
 const UpdateDetails = () =>{
+  CheckStatus();
   const {id}=useParams();
   
   const [name, setName] = useState("");

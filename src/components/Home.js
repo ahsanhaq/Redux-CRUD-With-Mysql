@@ -1,19 +1,26 @@
 import React, { useEffect } from "react";
 import { GetApiAction, DeleteApiAction } from "../redux/action/action";
 import { useDispatch, useSelector } from "react-redux";
-import { Link ,useNavigate} from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import { CheckStatus } from "./checkAuth";
+import { useNavigate } from "react-router-dom";
 export const Home = () => {
-  const navigate = useNavigate();
+ 
   const responseData = useSelector((state) => state.Reducer.details);
   const isDeleteResponse = useSelector((state) => state.Reducer.isDeleteResponse);
   const dispatch = useDispatch();
+  CheckStatus();
+  const navigate = useNavigate();
+  const logout = () => {
+    
+    localStorage.clear(); //for localStorage
+sessionStorage.clear(); //for sessionStorage
+navigate("/")
+  };
   useEffect(() => {
-    const loggedInUser = localStorage.getItem("loggedInUser");
-    console.log(loggedInUser)
-    if (!loggedInUser) {
-      navigate("/");
-    } 
+    // const loggedInUser = localStorage.getItem("loggedInUser");
+    // console.log(loggedInUser)
+    
     dispatch(GetApiAction());
   }, [dispatch]);
 
@@ -47,6 +54,15 @@ export const Home = () => {
   }):null;
   return (
     <div className="container">
+      <button
+          className="btn btn-primary"
+          type="submit"
+          onClick={(e) => {
+            logout();
+          }}
+        >
+          Logout
+        </button>
       <table className="table table-striped table-dark">
         <thead>
           <tr>
