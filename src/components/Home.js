@@ -5,17 +5,18 @@ import { Link } from "react-router-dom";
 import { CheckStatus } from "./checkAuth";
 import { useNavigate } from "react-router-dom";
 export const Home = () => {
- 
+  CheckStatus();
   const responseData = useSelector((state) => state.Reducer.details);
   const isDeleteResponse = useSelector((state) => state.Reducer.isDeleteResponse);
   const dispatch = useDispatch();
-  CheckStatus();
+ 
   const navigate = useNavigate();
   const logout = () => {
     
-    localStorage.clear(); //for localStorage
+   localStorage.clear(); //for localStorage
 sessionStorage.clear(); //for sessionStorage
 navigate("/")
+//navigate('/form', {state:{responseData}})
   };
   useEffect(() => {
     // const loggedInUser = localStorage.getItem("loggedInUser");

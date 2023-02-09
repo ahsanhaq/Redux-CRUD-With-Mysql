@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, } from "react";
 import { PostApiAction } from "../redux/action/action";
-import { useDispatch,useSelector } from "react-redux";
+import { useDispatch,useSelector, } from "react-redux";
 import { CheckStatus } from "./checkAuth";
+import { useLocation } from 'react-router-dom'
+
 const Form = () =>{
+  //const location  = useLocation(); 
+    
+    //console.log('locaaation',location)
+   
   CheckStatus();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
