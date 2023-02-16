@@ -1,4 +1,4 @@
-1: First of all install Xampp from following Url 
+1: First of all install Xampp from following Url <br>
    https://www.apachefriends.org/ 
 according to system need.
 2: Then copy api folder in htdocs folder and import sql script file in phpmyadmin that exists in db folder
